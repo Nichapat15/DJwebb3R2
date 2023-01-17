@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="mt-4 p-5 bg-primary text-white rounded">
+        <h1>Welcome to Digitech </h1>
+        <p><b>Try to learn at least a new word every day, learn words that are specific</b>
+            to your niche. If you work in a bakery then try to become familiar with bakery terms,
+            focus on the words you need to know, don’t start a “I will finish the dictionary marathon
+            please. Focus on the words
+            that are most frequently used in day to day conversations.
+        </p>
+    </div>
+    <div class="text-center">
+        <div class="spinner-border text-muted"></div>
+        <div class="spinner-border text-primary"></div>
+        <div class="spinner-border text-success"></div>
+        <div class="spinner-border text-warning"></div>
+        <div class="spinner-border text-danger"></div>
+        <div class="spinner-border text-secondary"></div>
+        <div class="spinner-border text-dark"></div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4">
+            <img src="{% static 'Image/12.jpg' %}" width="150px" height="150px"
+                 class="img-thumbnail">
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="{% static 'Image/11.jpeg' %}" width="150px" height="150px"
+                     class="img-thumbnail">
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="{% static 'Image/13.jpg' %}" width="150px" height="150px"
+                         class="img-thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

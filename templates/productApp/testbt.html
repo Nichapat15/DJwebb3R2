@@ -1,0 +1,58 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<H1>This is Test Boot</H1>
+<div class="alert alert-success">
+  <strong>สำเร็จ!</strong>ท่านลงทะเบียนเรียบร้อยแล้ว
+</div>
+<div class="alert alert-danger">
+  <strong>ผิดพลาด!</strong>สินค้าที่เลือกหมด ไม่สามารถสั่งซื้อได้
+</div><br>
+    <span class="badge bg-primary">Primary</span>
+    <span class="badge bg-secondary">Secondary</span><br><br>
+    <span class="badge rounded-pill bg-primary">Primary</span>
+    <span class="badge rounded-pill bg-secondary">Secondary</span>
+    </div><br>
+    <p class="text-danger">
+    001 mouse ราคา 500
+    <button data-bs-toggle="collapse" data-bs-target="#demo">Collapsible</button>
+ </p>
+<div id="demo" class="collapse">
+FANTECH รุ่น X5 LITE Optical Macro Key RGB Gaming Mouse เมาส์เกมมิ่ง ออฟติคอล ตั้งมาโครคีย์ได้<br>
+    ความแม่นยำสูงปรับ DPI 200 - 4800  พร้อม feet mouse เหมาะกับเกมส์ MMORPG(BNS) FPS MoBA (สีดำ)<br>
+เมาส์ FANTECH รุ่น X5 LITE Optical Macro Key RGB Gaming Mouse เมาส์เกมมิ่ง เม้าส์ ออฟติคอล เมาส์มาโคร เมาส์ gaming
+
+</div>
+<br>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+  เปิดหน่าต่าง
+</button>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">ผิดพลาด</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+            ท่านป้อนข้อมูลไม่ถูกต้อง
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+{% endblock %}
